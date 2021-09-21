@@ -1,7 +1,69 @@
+/* GENERAL PAGE ELEMENTS */
 body {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 
-h1, h2, h3 {
+h1, h2, h3, header {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
+/* RESPONSIVE NAVBAR */
+.navbar {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 5em;
+    margin: auto auto;
+    background-color: blueviolet;
+}
+
+.navbar ul, footer ul {
+    display: flex;
+    /* don't show bullet points */
+    list-style-type: none;
+    padding: 0em;
+    text-transform: uppercase;
+}
+
+.navbar ul li, footer ul li  {
+    display: flex;
+    padding: 2em 2em;
+}
+
+.navbar a, footer a, .media-container a {
+    /* remove underline & standard hyperlink */
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* TEXT-IMAGE OVERLAY */
+.txt-img-container {
+    border-radius: 2em;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.center-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.media-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: navy;
+}
+
