@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Contact Us | Alpine Lagoon</title>
@@ -14,14 +14,18 @@
   <header>
     <div class="navbar">
       <h1><a href="index.html">&#9968; Alpine Lagoon &#9968;</a></h1>
-  
-      <div class="summit-info"><h4>SUMMIT:</h4><h2>&#10052; -5 &deg;C</h2><p>/ 23 &deg; F</p></div>
-  
+
+      <div class="summit-info">
+        <h4>SUMMIT:</h4>
+        <h2>&#10052; -5 &deg;C</h2>
+        <p>/ 23 &deg; F</p>
+      </div>
+
       <!-- Activates Navbar -->
       <button id="trigram-btn" class="trigram">
         &#9782;
       </button>
-  
+
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
@@ -29,11 +33,11 @@
         <li><a href="contact.html">CONTACT US</a></li>
       </ul>
       <!-- Simple Javascript for toggling Navbar -->
-      <script type="text/javascript">
+      <script>
         const navtrigger = document.getElementById("trigram-btn");
         const ul = document.querySelector(".navbar ul");
         const trigramactive = document.querySelector(".trigram");
-  
+
         navtrigger.addEventListener('click', () => {
           ul.classList.toggle("show");
           trigramactive.classList.toggle("active");
@@ -42,36 +46,38 @@
     </div>
   </header>
 
-<div class="txt-img-container crop">
-  <img src="images/ski-lift-overlook.jpg" width=100%>
-  <h1 class="center-overlay">CONTACT US</h1>
-</div>
-
-<div class="body-container-64" style="transform: translate(23%, -5em)">
-  <p>Want to provide some feedback or have a question? Leave it below in the form provided below and we will get back to you in 1-2 business days.</p>
-
-  <div class="tab">
-    <p><label>*Name (First, Last):<input type="text"></label></p>
-    <p><label>*Email:<input type="text"></label></p>
-    <p>*Share name & email (If 'No', feedback will be shared anonymously):</p>
-    <p><label><input type="radio" name="share-email">Yes</label></p>
-    <p><label><input type="radio" name="share-email">No</label></p>
-    <p>*Website & Alpine Lagoon Experience (on Scale of 1-10):<label><input type="range" min="1" max="10" value="5"></label></p>
-    <p><label for="comments">*Provide any questions, comments, or feedback:</label></p>
-    <p><textarea id="comments"></textarea></p>
-    <p><button>Submit</button></p>
-    <p>* indicates a required field</p>
+  <div class="txt-img-container crop">
+    <img src="images/ski-lift-people.jpg" alt="People on ski lift" class="top-img" style="transform: translateY(-18em); overflow: none">
+    <h1 class="center-overlay">CONTACT US</h1>
   </div>
-</div>
+
+  <div class="body-container-64" style="transform: translate(23%, -5em)">
+    <p>Want to provide some feedback or have a question? Leave it below in the form provided below and we will get back
+      to you in 1-2 business days.</p>
+
+    <div class="tab">
+      <p><label>*Name (First, Last):<input type="text"></label></p>
+      <p><label>*Email:<input type="text"></label></p>
+      <p>*Share name & email (If 'No', feedback will be shared anonymously):</p>
+      <p><label><input type="radio" name="share-email">Yes</label></p>
+      <p><label><input type="radio" name="share-email">No</label></p>
+      <p>*Website & Alpine Lagoon Experience (on Scale of 1-10):<label><input type="range" min="1" max="10"
+            value="5"></label></p>
+      <p><label for="comments">*Provide any questions, comments, or feedback:</label></p>
+      <p><textarea id="comments"></textarea></p>
+      <p><button>Submit</button></p>
+      <p>* indicates a required field</p>
+    </div>
+  </div>
 
 
-<footer>
-  <ul>
-    <li><a href="#">Privacy Policy</a></li>
-    <li><a href="#">Terms of Service</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-</footer>
+  <footer>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </footer>
 
 </body>
 

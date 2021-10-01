@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>About Us | Alpine Lagoon</title>
@@ -11,65 +11,69 @@
 
 <body>
 
-<header>
-  <div class="navbar">
-    <h1><a href="index.html">&#9968; Alpine Lagoon &#9968;</a></h1>
+  <header>
+    <div class="navbar">
+      <h1><a href="index.html">&#9968; Alpine Lagoon &#9968;</a></h1>
 
-    <div class="summit-info"><h4>SUMMIT:</h4><h2>&#10052; -5 &deg;C</h2><p>/ 23 &deg; F</p></div>
+      <div class="summit-info">
+        <h4>SUMMIT:</h4>
+        <h2>&#10052; -5 &deg;C</h2>
+        <p>/ 23 &deg; F</p>
+      </div>
 
-    <!-- Activates Navbar -->
-    <button id="trigram-btn" class="trigram">
-      &#9782;
-    </button>
+      <!-- Activates Navbar -->
+      <button id="trigram-btn" class="trigram">
+        &#9782;
+      </button>
 
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="book.html">BOOK A TRIP</a></li>
-      <li><a href="contact.html">CONTACT US</a></li>
-    </ul>
-    <!-- Simple Javascript for toggling Navbar -->
-    <script type="text/javascript">
-      const navtrigger = document.getElementById("trigram-btn");
-      const ul = document.querySelector(".navbar ul");
-      const trigramactive = document.querySelector(".trigram");
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="book.html">BOOK A TRIP</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+      <!-- Simple Javascript for toggling Navbar -->
+      <script>
+        const navtrigger = document.getElementById("trigram-btn");
+        const ul = document.querySelector(".navbar ul");
+        const trigramactive = document.querySelector(".trigram");
 
-      navtrigger.addEventListener('click', () => {
-        ul.classList.toggle("show");
-        trigramactive.classList.toggle("active");
-      });
-    </script>
+        navtrigger.addEventListener('click', () => {
+          ul.classList.toggle("show");
+          trigramactive.classList.toggle("active");
+        });
+      </script>
+    </div>
+  </header>
+
+  <div class="txt-img-container crop">
+    <img src="images/mountain-sunset.jpg" alt="Snowy mountain sunset" style="transform: translateY(-25em); overflow: none">
+    <h1 class="center-overlay">ABOUT US</h1>
   </div>
-</header>
-
-<div class="txt-img-container crop">
-  <img src="images/mountain-sunset.jpg" width=100%>
-  <h1 class="center-overlay">ABOUT US</h1>
-</div>
 
 
-<div class="body-container-64">
-  <ul>
-    <li><a href="slopes.html">The Slopes</a></li>
-    <li><a href="activities.html">Seasonal Activities</a></li>
-    <li><a href="shop.html">Dining & Shopping</a></li>
-  </ul>
+  <div class="body-container-64">
+    <ul>
+      <li><a href="slopes.html">The Slopes</a></li>
+      <li><a href="activities.html">Seasonal Activities</a></li>
+      <li><a href="shop.html">Dining & Shopping</a></li>
+    </ul>
 
-  <p>Hello and welcome to Alpine Lagoon! Were a ski resort in the Loudjarr mountains. More specifically,
-    we're in the central part of Peri-Languard island in the Pacific Ocean.
+    <p>Hello and welcome to Alpine Lagoon! Were a ski resort in the Loudjarr mountains. More specifically,
+      we're in the central part of Peri-Languard island in the Pacific Ocean.
 
-    We're home to some of the most intense slopes across in the Western Hemisphere.
+      We're home to some of the most intense slopes across in the Western Hemisphere.
 
-  </p>
-</div>
+    </p>
+  </div>
 
-<footer>
-  <ul>
-    <li><a href="#">Privacy Policy</a></li>
-    <li><a href="#">Terms of Service</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-</footer>
+  <footer>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </footer>
 
 </body>
 

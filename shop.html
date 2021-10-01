@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Dining & Shopping | Alpine Lagoon</title>
@@ -14,14 +14,18 @@
   <header>
     <div class="navbar">
       <h1><a href="index.html">&#9968; Alpine Lagoon &#9968;</a></h1>
-  
-      <div class="summit-info"><h4>SUMMIT:</h4><h2>&#10052; -5 &deg;C</h2><p>/ 23 &deg; F</p></div>
-  
+
+      <div class="summit-info">
+        <h4>SUMMIT:</h4>
+        <h2>&#10052; -5 &deg;C</h2>
+        <p>/ 23 &deg; F</p>
+      </div>
+
       <!-- Activates Navbar -->
       <button id="trigram-btn" class="trigram">
         &#9782;
       </button>
-  
+
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
@@ -29,11 +33,11 @@
         <li><a href="contact.html">CONTACT US</a></li>
       </ul>
       <!-- Simple Javascript for toggling Navbar -->
-      <script type="text/javascript">
+      <script>
         const navtrigger = document.getElementById("trigram-btn");
         const ul = document.querySelector(".navbar ul");
         const trigramactive = document.querySelector(".trigram");
-  
+
         navtrigger.addEventListener('click', () => {
           ul.classList.toggle("show");
           trigramactive.classList.toggle("active");
@@ -42,39 +46,41 @@
     </div>
   </header>
 
-<div class="txt-img-container crop">
-  <img src="images/ski-lift-overlook.jpg" width=100%>
-  <h1 class="center-overlay">Dining & Shopping</h1>
-</div>
+  <div class="txt-img-container crop">
+    <img src="images/lodge.jpg" alt="Alpine Laboon ski lodge" class="top-img" style="transform: translateY(-18em); overflow: none">
+    <h1 class="center-overlay">Dining & Shopping</h1>
+  </div>
 
-<div class="body-container-64" tyle="transform: translate(23%, -5em)">
-  <img src="images/snow-cabin.jpg" class="right-img">
-  <p>
-  Looking for some resturants or shopping near the slopes? We got your back.
-  </p>
-  <h1>Shovhomish</h1>
-  <p>
-  A local resturant and bar located near the lodge. Well known for there cranberry marmalade sauce and seared steaks!
-  </p>
-  <h1>Toast House</h1>
-  <p>
-  Drinks and snacks at your convience on the slopes. Toast house is the little cabin near the Little Fox slope.
-  </p>
-  <h1>Alpine Lagoon Lodge Shopping Center</h1>
-  <p>
-  Our lodge even has an indoor shopping center. See the 2nd and 3rd floors for shopping our Apline Lagoon store, jewlery,
-  ski store, winter clothes shop, shoe store, and more.
-  </p>
-  <p><a href="about.html">ABOUT</a></p>
-</div>
+  <div class="body-container-64" tyle="transform: translate(23%, -5em)">
+    <img src="images/snow-cabin.jpg" alt="Toast House on Little Fox" class="right-img">
+    <p>
+      Looking for some resturants or shopping near the slopes? We got your back.
+    </p>
+    <h1>Shovhomish</h1>
+    <p>
+      A local resturant and bar located near the lodge. Well known for there cranberry marmalade sauce and seared
+      steaks!
+    </p>
+    <h1>Toast House</h1>
+    <p>
+      Drinks and snacks at your convience on the slopes. Toast house is the little cabin near the Little Fox slope.
+    </p>
+    <h1>Alpine Lagoon Lodge Shopping Center</h1>
+    <p>
+      Our lodge even has an indoor shopping center. See the 2nd and 3rd floors for shopping our Apline Lagoon store,
+      jewlery,
+      ski store, winter clothes shop, shoe store, and more.
+    </p>
+    <p><a href="about.html">ABOUT</a></p>
+  </div>
 
-<footer>
-  <ul>
-    <li><a href="#">Privacy Policy</a></li>
-    <li><a href="#">Terms of Service</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-</footer>
+  <footer>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </footer>
 
 </body>
 

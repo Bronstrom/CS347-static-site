@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Home | Alpine Lagoon</title>
@@ -35,7 +35,7 @@
         <li><a href="contact.html">CONTACT US</a></li>
       </ul>
       <!-- Simple Javascript for toggling Navbar -->
-      <script type="text/javascript">
+      <script>
         const navtrigger = document.getElementById("trigram-btn");
         const ul = document.querySelector(".navbar ul");
         const trigramactive = document.querySelector(".trigram");
@@ -48,7 +48,7 @@
     </div>
   </header>
 
-  <img src="images/skiier-index.jpg" width=100%>
+  <img src="images/skiier-index.jpg" alt="Skiier going down slope" class="top-img">
 
   <div class="body-container-64" style="background-color: rgba(69, 152, 204, 0.75)">
     <h1>DAILY WINTER REPORT</h1>
@@ -57,26 +57,25 @@
     <button onclick="location.href='slopes.html'">The Slopes</button>
   </div>
 
-
-  <h1 style="transform: translateX(20%)">Info About the Mountain</h1>
+  <h1 style="margin-left: 9em">Info About the Mountain</h1>
   <div class="media-container">
     <div class="txt-img-container">
       <a href="about.html">
-        <img src="images/mountain-sunset.jpg" width=75% style="border-radius: 50px">
+        <img src="images/mountain-sunset.jpg" alt="Snowy mountain sunset" class="media-elements">
         <div class="center-overlay">About Us</div>
       </a>
     </div>
 
     <div class="txt-img-container">
       <a href="slopes.html">
-        <img src="images/mountain-sunset.jpg" width=75% style="border-radius: 50px">
+        <img src="images/snow-boarder-ollie.jpg" alt="Snow boarder ollie" class="media-elements">
         <div class="center-overlay">The Slopes</div>
       </a>
     </div>
 
     <div class="txt-img-container">
       <a href="activities.html">
-        <img src="images/mountain-sunset.jpg" width=75% style="border-radius: 50px">
+        <img src="images/ice-skate.jpg" alt="Ice skate rink" class="media-elements">
         <div class="center-overlay">Seasonal Activities</div>
       </a>
     </div>
@@ -89,17 +88,25 @@
       Follow us on the social for mountain sport content and more. Sign up to our
       newsletter to recieve updates and special deals at Alpine Lagoon.
     </p>
-    <p>
-    <div class="tab"><label>Sign up today with your e-mail: <input type="text"></label>
-    <button>Submit</button></div>
-    </p>
+
+    <div class="tab">
+      <p><label>Sign up today with your e-mail: <input type="text"></label>
+        <button>Submit</button>
+      </p>
+    </div>
+
 
     <span class="social-circle"><a href="#" class="fa fa-facebook social-circle"></a></span>
     <span class="social-circle"><a href="#" class="fa fa-twitter social-circle"></a></span>
     <span class="social-circle"><a href="#" class="fa fa-instagram social-circle"></a></span>
   </div>
 
-  <div class="body-container-64">
+
+  <div class="txt-img-container crop">
+    <img src="images/skis-and-goggles.jpg" alt="Goggles on skiis" class="top-img" style="transform: translateY(-15em); overflow: none">
+  </div>
+
+  <div class="body-container-64" style="transform: translate(23%, -15em)"">
     <h1>Book a Trip Today!</h1>
 
     <button onclick="location.href='book.html'">Book</button>
@@ -107,12 +114,12 @@
 
   <div class="body-container-64">
     <p>Check out our neighboring, island and south pacific ski resorts!:
-    
+    </p>
     <div class="tab">
       <p><a href="https://www.cardrona.com/">Cardrona</a></p>
       <p><a href="https://www.treblecone.com/">Treble Cone</a></p>
     </div>
-    </p>
+
   </div>
 
   <footer>
