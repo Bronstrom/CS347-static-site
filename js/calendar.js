@@ -1,5 +1,6 @@
 const calendar_month = document.getElementById("calendar-month");
 const calendar = document.getElementById("book-calendar");
+const calendar_price = document.getElementById("calendar-price");
 
 const cur_date = new Date();
 const year = cur_date.getFullYear();
@@ -25,7 +26,6 @@ const days_in_month = month_day_enum[month];
 // Get starting day of calendar and negate it - this will fill the empty spaces and 
 // show how the past calendar connects
 const start = - (new Date(year, month, 0)).getDay();
-console.log(start);
 
 let cells_filled = 0;
 // Determine Sunday & Saturday initial day in month

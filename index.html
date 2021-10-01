@@ -3,75 +3,125 @@
 
 <head>
   <title>Home | Alpine Lagoon</title>
-  <link rel="icon" href="images/icon.png">                               <!----- REPLACE THIS PLEASEEEEEEEEEEEEEEE -->
+  <link rel="icon" href="images/icon-snowboarding-solid.svg">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome Logos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="utf-8">
   <meta name="description" content="Project 1 - Static Site">
 </head>
 
 <body>
 
-<header>
-  <div class="navbar">
-    <h1><a href="index.html">&#9968; Alpine Lagoon &#9968;</a></h1>
+  <header>
+    <div class="navbar">
+      <h1><a href="index.html">&#9968; Alpine Lagoon &#9968;</a></h1>
 
-    <!-- Activates Navbar -->
-    <button id="trigram-btn" class="trigram">
-      &#9782;
-    </button>
+      <div class="summit-info">
+        <h4>SUMMIT:</h4>
+        <h2>&#10052; -5 &deg;C</h2>
+        <p>/ 23 &deg; F</p>
+      </div>
 
+      <!-- Activates Navbar -->
+      <button id="trigram-btn" class="trigram">
+        &#9782;
+      </button>
+
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="book.html">BOOK A TRIP</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+      <!-- Simple Javascript for toggling Navbar -->
+      <script type="text/javascript">
+        const navtrigger = document.getElementById("trigram-btn");
+        const ul = document.querySelector(".navbar ul");
+        const trigramactive = document.querySelector(".trigram");
+
+        navtrigger.addEventListener('click', () => {
+          ul.classList.toggle("show");
+          trigramactive.classList.toggle("active");
+        });
+      </script>
+    </div>
+  </header>
+
+  <img src="images/skiier-index.jpg" width=100%>
+
+  <div class="body-container-64" style="background-color: rgba(69, 152, 204, 0.75)">
+    <h1>DAILY WINTER REPORT</h1>
+    <h3>Check out the conditions of slopes for updates.</h3>
+
+    <button onclick="location.href='slopes.html'">The Slopes</button>
+  </div>
+
+
+  <h1 style="transform: translateX(20%)">Info About the Mountain</h1>
+  <div class="media-container">
+    <div class="txt-img-container">
+      <a href="about.html">
+        <img src="images/mountain-sunset.jpg" width=75% style="border-radius: 50px">
+        <div class="center-overlay">About Us</div>
+      </a>
+    </div>
+
+    <div class="txt-img-container">
+      <a href="slopes.html">
+        <img src="images/mountain-sunset.jpg" width=75% style="border-radius: 50px">
+        <div class="center-overlay">The Slopes</div>
+      </a>
+    </div>
+
+    <div class="txt-img-container">
+      <a href="activities.html">
+        <img src="images/mountain-sunset.jpg" width=75% style="border-radius: 50px">
+        <div class="center-overlay">Seasonal Activities</div>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="body-container-64">
+    <h1>Stay Up to Date</h1>
+    <p>
+      Follow us on the social for mountain sport content and more. Sign up to our
+      newsletter to recieve updates and special deals at Alpine Lagoon.
+    </p>
+    <p>
+    <div class="tab"><label>Sign up today with your e-mail: <input type="text"></label>
+    <button>Submit</button></div>
+    </p>
+
+    <span class="social-circle"><a href="#" class="fa fa-facebook social-circle"></a></span>
+    <span class="social-circle"><a href="#" class="fa fa-twitter social-circle"></a></span>
+    <span class="social-circle"><a href="#" class="fa fa-instagram social-circle"></a></span>
+  </div>
+
+  <div class="body-container-64">
+    <h1>Book a Trip Today!</h1>
+
+    <button onclick="location.href='book.html'">Book</button>
+  </div>
+
+  <div class="body-container-64">
+    <p>Check out our neighboring, island and south pacific ski resorts!:
+    
+    <div class="tab">
+      <p><a href="https://www.cardrona.com/">Cardrona</a></p>
+      <p><a href="https://www.treblecone.com/">Treble Cone</a></p>
+    </div>
+    </p>
+  </div>
+
+  <footer>
     <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="book.html">BOOK A TRIP</a></li>
-      <li><a href="contact.html">CONTACT US</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
     </ul>
-    <!-- Simple Javascript for toggling Navbar -->
-    <script type="text/javascript">
-      const navtrigger = document.getElementById("trigram-btn");
-      const ul = document.querySelector(".navbar ul");
-      const trigramactive = document.querySelector(".trigram");
-
-      navtrigger.addEventListener('click', () => {
-        ul.classList.toggle("show");
-        trigramactive.classList.toggle("active");
-      });
-    </script>
-  </div>
-</header>
-
-<img src="images/skiier-index.jpg" width=100%>
-
-<div class="media-container">
-  <div class="txt-img-container">
-    <a href="about.html">
-      <img src="images/mountain-sunset.jpg" width=75% style="border-radius: 50px">
-      <div class="center-overlay">About Us</div>
-    </a>
-  </div>
-
-  <div class="txt-img-container">
-    <a href="book.html">
-      <img src="images/mountain-sunset.jpg" width=75% style="border-radius: 50px">
-      <div class="center-overlay">Book a Trip</div>
-    </a>
-  </div>
-
-  <div class="txt-img-container">
-    <a href="#">
-      <img src="images/mountain-sunset.jpg" width=75% style="border-radius: 50px">
-      <div class="center-overlay">Contact Us</div>
-    </a>
-  </div>
-</div>
-
-<footer>
-  <ul>
-    <li><a href="#">Privacy Policy</a></li>
-    <li><a href="#">Terms of Service</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-</footer>
+  </footer>
 
 </body>
 

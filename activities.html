@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Book A Trip | Alpine Lagoon</title>
+  <title>Seasonal Activities | Alpine Lagoon</title>
   <link rel="icon" href="images/icon-snowboarding-solid.svg">
   <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8">
@@ -48,45 +48,36 @@
 
   <div class="txt-img-container crop">
     <img src="images/ski-lift-overlook.jpg" width=100%>
-    <h1 class="center-overlay">BOOK A TRIP</h1>
+    <h1 class="center-overlay">Seasonal Activities</h1>
   </div>
 
-  <p class="body-container-64">
-    Book your trip today! Pick your desired dates below. When selecting your choosen dates, lodging and ski lift tickets
-    are included in costs.
+  <div class="body-container-64">
+  <p>
+    Not interested in skiing or snowboarding or take a day or two off from the slopes. Alpine Lagoon
+    has other seasonal activities for show.
   </p>
-
-  <div id="calendar-month"></div>
-  <div id="book-calendar"></div>
-  <div class="body-container-64" id="calendar-price"></div>
-  <!-- Run build calendar script -->
-  <script src="js/calendar.js"></script>
-
-  <script>
-    // Used for calculating total price
-    let total = 0;
-
-    // Insert Price Data
-    calendar_price.insertAdjacentHTML('beforeend', `<p>Total price: $<span id="total">${total}</span></p><p><button>&#128722; Checkout</button></p>`);
-
-    let days = document.getElementsByClassName("day");
-    // Handle click of day
-    for (i = 0; i < days.length; i++) {
-      let day = days[i];
-      day.addEventListener("click", function () {
-        if (this.classList.contains("active")) {
-          this.classList.remove("active");
-          total -= 140.00;
-          document.getElementById("total").innerHTML = total;
-        } else {
-          this.classList.add("active");
-          total += 140.00;
-          document.getElementById("total").innerHTML = total;
-        }
-      });
-    }
-  </script>
-
+  <h3>Ramdawn Village</h3>
+  <p>
+    Lots of local stores and shopes at the top of the mountain next to the lodge. In the summers, mini golf opens in
+    place
+    of the ice skating rink.
+  </p>
+  <h3>Ice Skating (November 22nd&#8211;March 8th)</h3>
+  <p>
+    During the mid-winter months, Alpine Lagoon, opens the ice skating rink in Ramdawn Village.
+  </p>
+  <h3>Glacier Festival (December 27th&#8211;January 5th)</h3>
+  <p>
+    A market festival with hot food and live music.
+  </p>
+  <h2>Out of Winter Season</h2>
+  <p>
+    Out of the Winter Season, there are plenty of outdoor hiking trails and bike paths to explore.
+    There are also several lagoons and lakes around the mountain to swim, boat and fish around. To name a few,
+    there is Klane Poh and Lake Fijo.
+  </p>
+  <p><a href="about.html">ABOUT</a></p>
+  </div>
 
   <footer>
     <ul>
