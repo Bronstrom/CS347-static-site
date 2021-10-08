@@ -51,14 +51,23 @@
     <h1 class="center-overlay">BOOK A TRIP</h1>
   </div>
 
-  <p class="body-container-64">
-    Book your trip today! Pick your desired dates below. When selecting your choosen dates, lodging and ski lift tickets
-    are included in costs.
-  </p>
 
-  <div id="calendar-month"></div>
-  <div id="book-calendar"></div>
-  <div class="body-container-64" id="calendar-price"></div>
+  <div class="center-container">
+    <p class="body-container-64">
+      Book your trip today! Pick your desired dates below. When selecting your choosen dates, lodging and ski lift tickets
+      are included in costs.
+    </p>
+  </div>
+
+  <div class="center-container">
+    <div id="calendar-month"></div>
+  </div>
+  <div class="center-container">
+    <div id="book-calendar"></div>
+  </div>
+  <div class="center-container">
+    <div class="body-container-64" id="calendar-price"></div>
+  </div>
   <!-- Run build calendar script -->
   <script src="js/calendar.js"></script>
 
@@ -76,22 +85,25 @@
       day.addEventListener("click", function () {
         if (this.classList.contains("active")) {
           this.classList.remove("active");
+          day.setAttribute("id", "day-unselected")
           total -= 140.00;
           document.getElementById("total").innerHTML = total;
         } else {
           this.classList.add("active");
+          day.setAttribute("id", "day-selected")
           total += 140.00;
           document.getElementById("total").innerHTML = total;
         }
       });
     }
+
   </script>
 
 
   <footer>
     <ul>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Terms of Service</a></li>
+      <li><a href="construction.html">Privacy Policy</a></li>
+      <li><a href="construction.html">Terms of Service</a></li>
       <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </footer>
